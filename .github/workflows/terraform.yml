@@ -14,7 +14,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ./loadbalancer
+        working-directory: /home/github/actions-runner/_work/loadbalancer/loadbalancer
 
     steps:
       - name: Checkout
