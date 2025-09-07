@@ -27,7 +27,6 @@ jobs:
     - name: Azure Login
       uses: Azure/login@v2.3.0
       with:
-        environment: azurecloud
         creds: ${{secrets.LBPRACTICE}}
   
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
