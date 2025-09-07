@@ -18,8 +18,12 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
 
-    - name: Setup Azure CLI
-      uses: azure/setup-azure@v3
+    - name: Azure CLI Action
+      uses: Azure/cli@v2.1.0
+      with:
+        azcliversion: agentazcliversion
+          
+
 
     # # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
     # - name: Setup Terraform
